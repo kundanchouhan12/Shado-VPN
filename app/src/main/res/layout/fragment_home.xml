@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/txtServer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌍 Default Server"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieVpn"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/vpn_disconnect_anim"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnected"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnToggle"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Connect"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="@drawable/button_glow" />
+</LinearLayout>

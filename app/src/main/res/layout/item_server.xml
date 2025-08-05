@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="20dp"
+    app:useCompatPadding="true"
+    android:background="@drawable/gradient_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/server_card_bg_glow">
+
+        <!-- 🌍 Country + Flag -->
+        <TextView
+            android:id="@+id/txtCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🇺🇸 United States"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- 📶 Ping -->
+        <TextView
+            android:id="@+id/txtPing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45 ms"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:textColor="#4CAF50"
+            android:fontFamily="monospace" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
