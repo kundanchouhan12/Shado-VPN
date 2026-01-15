@@ -45,4 +45,4 @@ With a sleek UI, global server selection, and real-time animations, it ensures s
 ## 📦 How to Run!
 
 ```bash
-git clone https://github.com/your-username/shadovpn.git
+git clone [https://github.com/your-username/shadovpn.git](https://github.com/kundanchouhan12/Shado-VPN.git)
